@@ -1,4 +1,7 @@
+def multiply(a, b):
+    return a * b
 def calculator():
+    
     print("=== Simple Calculator ===")
     print("1. Addition (+)")
     print("2. Subtraction (-)")
@@ -15,7 +18,7 @@ def calculator():
     elif choice == "2":
         result = num1 - num2
     elif choice == "3":
-        result = num1 * num2
+        result = multiply(num1, num2)
     elif choice == "4":
         if num2 == 0:
             print("Error: Cannot divide by zero!")
